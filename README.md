@@ -2,6 +2,7 @@
 
 > Welcome to my personal portfolio, feel free to look around.
 
+![screenshot](./portfolio_screenshot.jpg)
 
 ## Built With
 
