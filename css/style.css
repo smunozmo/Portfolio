@@ -11,14 +11,13 @@ a {
 }
 
 .name {
-  padding-left: 5%;
+  padding: 15% 0 0 5%;
   font-family: Playfair Display, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 7vw;
+  font-size: 25px;
   line-height: 180%;
   color: #1a2236;
-  margin-bottom: -20px;
 }
 
 .intro h2 {
@@ -56,18 +55,14 @@ button:hover {
   padding: 0 5% 0 5%;
 }
 
-ul {
-  list-style: none;
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.flex-nav ul {
+.flex-nav a {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .toggleNav {
