@@ -1,103 +1,60 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: #eee;
+  background-image: url(../assets/img/image_geometry_1.png);
+  background-position: top left;
+  background-repeat: no-repeat;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  min-height: 75px;
-  padding: 0 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(146, 143, 143, 0.281);
-}
-
-header img {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: 20px;
-}
-
-nav {
-  font-weight: 400;
-  font-family: 'Lato', sans-serif;
+a {
   color: #000;
   text-decoration: none;
+  font-size: 24px;
+}
+
+.name {
+  padding-left: 5%;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7vw;
+  line-height: 180%;
+  color: #1A2236;
+  margin-bottom: -20px;
+  
+}
+
+.intro {
+  padding-left: 5%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  border: 1px solid yellow;
+  color: #1A2236;
 }
 
 ul {
-  list-style-type: none;
-  width: 35vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  list-style: none;
 }
 
-nav a {
-  color: #000;
-  text-decoration: none;
-}
-
-input {
-  max-width: 275px;
-  width: 100%;
-  padding: 5px;
-}
-
-form {
+.wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 200px;
-  margin-top: 150px;
+  border: 1px solid blue;
 }
 
-form h2 {
-  padding-bottom: 1rem;
+.flex-nav {
+  border: 1px solid red; 
 }
 
-input[type='submit'] {
-  max-width: 200px;
-  width: 100%;
-  height: 50px;
-  margin: 15px 0;
-  border: 0;
-  font-weight: bold;
-  background-color: rgba(238, 28, 28, 0.767);
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.featured-wrapper {
+.flex-nav ul {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
-  align-items: center;
+
 }
 
-.featured-icon {
-  font-size: 2rem;
-  color: rgba(238, 28, 28, 0.767);
-  margin-right: 3.5rem;
-}
-
-.main p {
-  width: 700px;
+.toggleNav {
+  text-align: right;
+  padding-right: 10px;
 }
