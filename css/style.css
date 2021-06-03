@@ -29,7 +29,6 @@ a {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
-  border: 1px solid yellow;
   color: #1a2236;
 }
 
@@ -64,11 +63,6 @@ ul {
 .wrapper {
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
-}
-
-.flex-nav {
-  border: 1px solid red;
 }
 
 .flex-nav ul {
