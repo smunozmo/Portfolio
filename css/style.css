@@ -12,26 +12,49 @@ a {
 
 .name {
   padding-left: 5%;
-  font-family: Playfair Display;
+  font-family: Playfair Display, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 7vw;
   line-height: 180%;
-  color: #1A2236;
+  color: #1a2236;
   margin-bottom: -20px;
-  
 }
 
-.intro {
+.intro h2 {
   padding-left: 5%;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
   border: 1px solid yellow;
-  color: #1A2236;
+  color: #1a2236;
+}
+
+button {
+  background-color: #1a2236;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #1a2236;
+}
+
+.collab {
+  width: 100%;
+  padding: 0 5% 0 5%;
 }
 
 ul {
@@ -45,13 +68,12 @@ ul {
 }
 
 .flex-nav {
-  border: 1px solid red; 
+  border: 1px solid red;
 }
 
 .flex-nav ul {
   display: flex;
   justify-content: space-between;
-
 }
 
 .toggleNav {
