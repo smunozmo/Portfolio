@@ -1,0 +1,71 @@
+body {
+  background-image: url(../assets/img/image_geometry_1.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.name {
+  padding: 15% 0 0 5%;
+  font-family: Playfair Display, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 180%;
+  color: #1a2236;
+}
+
+.intro p {
+  padding-left: 5%;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+button {
+  background-color: #1a2236;
+  width: 90%;
+  padding: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #1a2236;
+}
+
+.collab {
+  width: 100%;
+  padding: 0 5% 0 5%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-nav a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toggleNav {
+  text-align: right;
+  padding-right: 10px;
+}
