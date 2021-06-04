@@ -2,16 +2,14 @@
   text-decoration: none;
   list-style: none;
   padding-inline-start: 0;
-  margin:0;
+  margin: 0;
   overflow-x: hidden;
-
 }
 
 body {
   background-image: url(../assets/img/image_geometry_1.png);
   background-position: top left;
   background-repeat: no-repeat;
-
 }
 
 a {
@@ -105,7 +103,6 @@ button:hover {
   width: auto;
 }
 
-
 .item1 {
   grid-column: 1 / 5;
   grid-row: 1;
@@ -121,28 +118,27 @@ button:hover {
   grid-column: 1;
   grid-row: 3;
   background-color: #98dede;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10.3334px;
   line-height: 80%;
-  color: #1A2236;
+  color: #1a2236;
   padding: 6px 0 6px 0;
   margin-left: 20px;
   text-align: center;
-
 }
 
 .item4 {
   grid-column: 2;
   grid-row: 3;
   background-color: #98dede;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10.3334px;
   line-height: 80%;
-  color: #1A2236;
+  color: #1a2236;
   padding: 6px 0 6px 0;
   text-align: center;
 }
@@ -151,12 +147,12 @@ button:hover {
   grid-column: 3;
   grid-row: 3;
   background-color: #98dede;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10.3334px;
   line-height: 80%;
-  color: #1A2236;
+  color: #1a2236;
   padding: 6px 0 6px 0;
   text-align: center;
 }
@@ -164,7 +160,6 @@ button:hover {
 .item6 {
   grid-column: 4;
   grid-row: 3;
-  
   grid-gap: 10px;
   text-align: center;
 }
@@ -182,7 +177,7 @@ button:hover {
   font-weight: 300;
   font-size: 20px;
   line-height: 80%;
-  color: #FFFFFF;
+  color: #fff;
   padding-left: 20px;
 }
 
@@ -203,7 +198,6 @@ button:hover {
   text-align: left;
   color: #fff;
   border: 1px solid #fff;
-  
 }
 
 .projects-btn img {
@@ -211,5 +205,80 @@ button:hover {
   height: 15.35px;
   padding: 5px 0 0 0;
   vertical-align: -2px;
-  
+}
+
+.about-title h1 {
+  padding: 40px 0 0 16px;
+  font-family: Playfair Display, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.btn img {
+  width: 24px;
+  height: 24px;
+  padding: 5px 0 0 10px;
+  vertical-align: -5px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 50px 0 20px 50px;
+  color: #fff;
+}
+
+.list {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  padding: 0 0 0 50px;
+  color: #fff;
+}
+
+.lang {
+  background-image: url(../assets/img/hashtag.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #1c528a;
+  margin: 16px;
+  flex: 1;
+  min-width: 290px;
+  min-height: 290px;
+}
+
+.frame {
+  background-image: url(../assets/img/Group\ 18.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #e2505c;
+  margin: 16px;
+  flex: 1;
+  min-width: 290px;
+  min-height: 290px;
+}
+
+.skill {
+  background-image: url(../assets/img/ic_skills.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #febf52;
+  margin: 16px;
+  flex: 1;
+  min-width: 290px;
+  min-height: 290px;
 }
