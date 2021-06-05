@@ -96,75 +96,47 @@ button:hover {
 
 .grid-container {
   display: grid;
-  grid-gap: 10px;
   background-color: #1a2236;
   margin: 0;
   padding: 0 0 0 0;
-  width: auto;
+  width: 100%;
 }
 
-.item1 {
+.picture {
   grid-column: 1 / 5;
   grid-row: 1;
 }
 
-.item2 {
+.project-grid-item {
   grid-column: 1 / 5;
   grid-row: 2;
   padding-top: 20px;
 }
 
-.item3 {
+.project-lang {
   grid-column: 1;
   grid-row: 3;
-  background-color: #98dede;
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 10.3334px;
-  line-height: 80%;
-  color: #1a2236;
-  padding: 6px 0 6px 0;
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  padding-top: 10px;
   margin-left: 20px;
   text-align: center;
 }
 
-.item4 {
-  grid-column: 2;
-  grid-row: 3;
+.project-lang li {
+  width: auto;
   background-color: #98dede;
+  padding: 6px 10px 6px 10px;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10.3334px;
   line-height: 80%;
   color: #1a2236;
-  padding: 6px 0 6px 0;
-  text-align: center;
 }
 
-.item5 {
-  grid-column: 3;
-  grid-row: 3;
-  background-color: #98dede;
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 10.3334px;
-  line-height: 80%;
-  color: #1a2236;
-  padding: 6px 0 6px 0;
-  text-align: center;
-}
-
-.item6 {
-  grid-column: 4;
-  grid-row: 3;
-  grid-gap: 10px;
-  text-align: center;
-}
-
-.item7 {
+.project-btn-grid {
   grid-column: 1 / 4;
   grid-row: 4;
 }
@@ -181,14 +153,14 @@ button:hover {
   padding-left: 20px;
 }
 
-.item1 img {
+.picture img {
   width: 100%;
 }
 
 .projects-btn {
   background-color: #1a2236;
   width: auto;
-  padding: 10px 10px 10px 10px;
+  padding: 5px 10px 10px 10px;
   margin: 0 0 10px 0;
   font-family: Poppins, sans-serif;
   font-style: normal;
