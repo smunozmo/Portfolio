@@ -1,3 +1,11 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 body {
   background-image: url(../assets/img/image_geometry_1.png);
   background-position: top left;
@@ -6,22 +14,21 @@ body {
 
 a {
   color: #000;
-  text-decoration: none;
   font-size: 24px;
 }
 
-.name {
-  padding: 15% 0 0 5%;
+.name h1 {
+  padding: 104px 0 0 16px;
   font-family: Playfair Display, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
-  line-height: 180%;
+  font-size: 50px;
+  line-height: 100%;
   color: #1a2236;
 }
 
 .intro p {
-  padding-left: 5%;
+  padding: 20px 16px 0 16px;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -50,14 +57,9 @@ button:hover {
   color: #1a2236;
 }
 
-.collab {
+.btn {
   width: 100%;
-  padding: 0 5% 0 5%;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
+  padding: 20px 16px 32px 16px;
 }
 
 .flex-nav a {
@@ -67,5 +69,188 @@ button:hover {
 
 .toggleNav {
   text-align: right;
-  padding-right: 10px;
+  padding: 20px 16px 0 0;
+}
+
+.geometry {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.geometry img {
+  flex: 1;
+}
+
+.projects-title h1 {
+  padding: 40px 0 32px 16px;
+  font-family: Playfair Display, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+/* Grid start */
+
+.grid-container {
+  display: grid;
+  background-color: #1a2236;
+  margin: 0;
+  padding: 0 0 0 0;
+  width: 100%;
+}
+
+.picture {
+  grid-column: 1 / 5;
+  grid-row: 1;
+}
+
+.project-grid-item {
+  grid-column: 1 / 5;
+  grid-row: 2;
+  padding-top: 20px;
+}
+
+.project-lang {
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.project-lang li {
+  width: auto;
+  background-color: #98dede;
+  padding: 6px 10px 6px 10px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  color: #1a2236;
+}
+
+.project-btn-grid {
+  grid-column: 1 / 4;
+  grid-row: 4;
+}
+
+/* Grid end */
+
+.project-name {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.picture img {
+  width: 100%;
+}
+
+.projects-btn {
+  background-color: #1a2236;
+  width: auto;
+  padding: 5px 10px 10px 10px;
+  margin: 0 0 10px 0;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.projects-btn img {
+  width: 20.57px;
+  height: 15.35px;
+  padding: 5px 0 0 0;
+  vertical-align: -2px;
+}
+
+.about-title h1 {
+  padding: 40px 0 0 16px;
+  font-family: Playfair Display, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.btn img {
+  width: 24px;
+  height: 24px;
+  padding: 5px 0 0 10px;
+  vertical-align: -5px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 50px 0 20px 50px;
+  color: #fff;
+}
+
+.list {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  padding: 0 0 0 50px;
+  color: #fff;
+}
+
+.lang {
+  background-image: url(../assets/img/hashtag.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #1c528a;
+  margin: 16px;
+  flex: 1;
+  min-width: 290px;
+  min-height: 290px;
+}
+
+.frame {
+  background-image: url(../assets/img/Group\ 18.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #e2505c;
+  margin: 16px;
+  flex: 1;
+  min-width: 290px;
+  min-height: 290px;
+}
+
+.skill {
+  background-image: url(../assets/img/ic_skills.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #febf52;
+  margin: 16px;
+  flex: 1;
+  min-width: 290px;
+  min-height: 290px;
 }
