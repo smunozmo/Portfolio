@@ -254,3 +254,21 @@ h2 {
   min-width: 290px;
   min-height: 290px;
 }
+
+.contact-form {
+  background: #f9f9fa;
+  background-image: url(../assets/img/image_geometry_1.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.contact-form h1 {
+  padding: 106px 0 0 16px;
+  font-family: Playfair Display, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
