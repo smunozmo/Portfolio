@@ -265,8 +265,6 @@ h2 {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact-form h1 {
@@ -296,10 +294,10 @@ h2 {
   padding-top: 4px;
 }
 
-.form-felds {
+.form-fields {
   display: flex;
   flex-direction: column;
-  padding-left: 16px;
+  padding: 0 0 0 16px;
 }
 
 input[type="text"],
@@ -360,6 +358,8 @@ textarea {
 .contact-form .btn {
   padding: 20px 0 32px 0;
 }
+
+/* Contact form end */
 
 footer {
   background-color: #1a2236;
