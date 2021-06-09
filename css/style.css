@@ -255,6 +255,8 @@ h2 {
   min-height: 290px;
 }
 
+/* Contact form start */
+
 .contact-form {
   background: #f9f9fa;
   background-image: url(../assets/img/image_geometry_1.png);
@@ -270,5 +272,86 @@ h2 {
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
+  align-self: flex-start;
 }
 
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.float-container span{
+  position: absolute;
+  float: left;
+}
+
+.form-felds {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: none;
+  border-radius: 4px;
+  padding: 23px 0 0 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a2236;
+  width: 90%;
+}
+
+textarea {
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a2236;
+  width: 90%;
+}
+
+.float-container {
+  background-color: #fff;
+  border: solid 1px grey;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 0 8px;
+  position: relative;
+  width: 288px;
+  height: 52px;
+}
+
+.float-textarea {
+  height: 112px;
+  background-color: #fff;
+  border: solid 1px grey;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 0 8px;
+  position: relative;
+  width: 288px;
+}
+
+span {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+  color: #7d7c84;
+  position: absolute;
+  padding-left: 16px;
+}
