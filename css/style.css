@@ -351,14 +351,6 @@ textarea {
   width: 288px;
 }
 
-.contact-form button {
-  width: 100%;
-}
-
-.contact-form .btn {
-  padding: 20px 0 32px 0;
-}
-
 /* Contact form end */
 
 footer {
@@ -367,7 +359,7 @@ footer {
   height: 150px;
 }
 
-footer div {
+.social {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
