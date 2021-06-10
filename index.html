@@ -13,20 +13,39 @@
     <header>
         <nav class="flex-nav"> 
             <a href="#" class="toggleNav">☰</a>
+            <ul class="menu">
+                <li>
+                    Hello
+                    <div class="line-hello"></div>
+                </li>
+                <li>Portfolio
+                    <div class="line-portfolio"></div>
+                </li>
+                <li>About
+                    <div class="line-about"></div>
+                </li>
+                <li>Contact
+                    <div class="line-contact"></div>
+                </li>
+            </ul>
         </nav>
     </header>
-    <main class="name">
-        <h1>Sebastián<br>Muñoz</h1>
+    <main>
+        <div class="main-text">
+            <div class="name">
+                <h1>Sebastián<br>Muñoz</h1>
+            </div>
+            <section class="intro">
+                <p>Hello! I am a software developer! I can help you build a product, feature or website.      Taka a look of my works. <br> If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
+            </section>
+            <div class="btn">
+                <button type="button">Start collaboration</button>
+            </div>
+        </div>
+        <div class="geometry">
+            <img src="assets/img/image_geometry_2.svg" alt="">
+        </div>
     </main>
-    <section class="intro">
-        <p>Hello! I am a software developer! I can help you build a product, feature or website.      Taka a look of my works. <br> If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
-    </section>
-    <div class="btn">
-        <button type="button">Start collaboration</button>
-    </div>
-    <div class="geometry">
-        <img src="assets/img/image_geometry_2.png" alt="">
-    </div>
     <section class="projects-title">
         <h1>Projects</h1>
         <ul class="projects">
@@ -141,12 +160,14 @@
         </ul>
     </section>
     <section class="about-title">
-        <h1>About</h1>
-        <div class="intro">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
-        </div>
-        <div class="btn">
-            <button type="button">Get my CV  <img src="assets/img/ic_download.png" alt=""></button>
+        <div class="about-text">
+            <h1>About</h1>
+            <div class="intro">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
+            </div>
+            <div class="btn">
+                <button type="button">Get my CV  <img src="assets/img/ic_download.png" alt=""></button>
+            </div>
         </div>
         <ul class="about-wrapper">
             <li class="lang">
@@ -183,20 +204,22 @@
     <section class="contact-form">
         <h1>Get started</h1>
             <div class="intro">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             <form action="https://formspree.io/f/mgerywqd" method="post">
                 <div class="form-fields">
-                 <div class="float-container">
-                   <span>Your name</span>
-                   <input type="text" id="name" name="user_name" placeholder="Mr Bean" maxlength="30" required>
-                 </div>
-                 <div class="float-container">
-                   <span>E-mail:</span>
-                   <input type="email" id="mail" name="user_email" placeholder="mister@bean.com" required>
-                 </div>
+                    <div class="name-email">
+                        <div class="float-container">
+                          <span>Your name</span>
+                          <input type="text" id="name" name="user_name" placeholder="Mr Bean" maxlength="30" required>
+                        </div>
+                        <div class="float-container">
+                          <span>E-mail:</span>
+                          <input type="email" id="mail" name="user_email" placeholder="mister@bean.com" required>
+                        </div>
+                    </div>
                  <div class="float-textarea">
-                   <span></span>
+                   <span>Message:</span>
                    <textarea id="msg" name="user_message" placeholder="Enter your message here..." maxlength="500" required></textarea>
                  </div>
                 </div>
