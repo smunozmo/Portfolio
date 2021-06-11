@@ -51,6 +51,20 @@ main {
   color: #1a2236;
 }
 
+@keyframes pulse {
+  0%  {
+    opacity: 0.8;
+  }
+  
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
 button {
   background-color: #1a2236;
   width: 90%;
@@ -62,6 +76,7 @@ button {
   font-size: 5vw;
   text-align: center;
   color: #fff;
+  animation: pulse 1s infinite;
 }
 
 button:hover {
