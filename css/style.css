@@ -465,7 +465,7 @@ footer {
   }
 
   .geometry {
-    background-image: url('../assets/img/image-geometry_3.png');
+    background-image: url(../assets/img/image-geometry_3.png);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 48.75vw 61vw;
@@ -605,6 +605,7 @@ footer {
     float: right;
     position: relative;
     top: -24vw;
+    transition: all 0.3s ease-out;
   }
 
   .project-bottom-type1:hover {
@@ -621,6 +622,7 @@ footer {
     float: right;
     position: relative;
     top: -28.2vw;
+    transition: all 0.3s ease-out;
   }
 
   .project-bottom-type2:hover {
@@ -637,6 +639,7 @@ footer {
     float: right;
     position: relative;
     top: -36.32vw;
+    transition: all 0.3s ease-out;
   }
 
   .project-bottom-type3:hover {
