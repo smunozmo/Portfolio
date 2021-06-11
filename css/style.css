@@ -361,6 +361,10 @@ textarea {
   position: relative;
 }
 
+.float-textarea span {
+  visibility: hidden;
+}
+
 /* Contact form end */
 
 footer {
@@ -628,7 +632,7 @@ footer {
     background-color: #1a2236;
     float: right;
     position: relative;
-    top: -100%;
+    top: -24vw;
   }
   
   .project-bottom-type1 {
@@ -636,7 +640,7 @@ footer {
     background-color: #1a2236;
     float: right;
     position: relative;
-    top: -100%;
+    top: -24vw;
   }
 
   .project-bottom-type2:hover {
@@ -644,7 +648,7 @@ footer {
     background-color: #1a2236;
     float: right;
     position: relative;
-    top: -100%;
+    top: -28.2vw;
   }
   
   .project-bottom-type2 {
@@ -652,7 +656,7 @@ footer {
     background-color: #1a2236;
     float: right;
     position: relative;
-    top: -100%;
+    top: -28.2vw;
   }
 
   .project-bottom-type3:hover {
@@ -660,7 +664,7 @@ footer {
     background-color: #1a2236;
     float: right;
     position: relative;
-    top: -100%;
+    top: -36.32vw;
   }
   
   .project-bottom-type3 {
@@ -668,7 +672,7 @@ footer {
     background-color: #1a2236;
     float: right;
     position: relative;
-    top: -100%;
+    top: -36.32vw;
   }
   
   .projects li .item1 {
@@ -701,7 +705,7 @@ footer {
   }
   
   .projects li .item6 {
-    width: 18.75vw;
+    width: 32.3vw;
     height: 18.75vw;
     margin-top: 13.555vw;
     margin-left: 5.555vw;
@@ -722,10 +726,22 @@ footer {
     margin: 0;
   }
 
-  .projects-btn {
+  .project-bottom-type1 .projects-btn {
     font-size: 1.25vw;
     padding: 0.833vw 0.833vw 0.833vw 1.38vw;
     margin: 4.16vw 0 4.16vw 0;
+  }
+
+  .project-bottom-type2 .projects-btn {
+    font-size: 1.25vw;
+    padding: 0.833vw 0.833vw 0.833vw 1.38vw;
+    margin: 4.16vw 0 4.16vw 0;
+  }
+
+  .project-bottom-type3 .projects-btn {
+    font-size: 1.25vw;
+    padding: 0.833vw 0.833vw 0.833vw 1.38vw;
+    margin: 1vw 0 2vw -2vw;
   }
 
   .projects-btn img {
@@ -758,7 +774,7 @@ footer {
     width: inherit;
     justify-content: flex-start;
     padding-top: 1vw;
-    margin-left: 2.8vw;
+    margin-left: 2.3vw;
     text-align: center;
   }
 
@@ -769,10 +785,9 @@ footer {
     width: inherit;
     justify-content: flex-start;
     padding-top: 1vw;
-    margin-left: 2vw;
+    margin-left: 1.2vw;
     text-align: center;
   }
-
   
   .project-bottom-type1 .project-lang li {
     padding: 0.5vw 2vw;
@@ -787,9 +802,9 @@ footer {
   }
 
   .project-bottom-type3 .project-lang li {
-    padding: 0.5vw 2vw;
+    padding: 0.5vw 0.5vw;
     font-size: 100%;
-    margin-left: 2vw;
+    margin-left: 1vw;
   }
 
   .project-bottom-type1 .project-name {
@@ -988,6 +1003,7 @@ footer {
   }
 
   .float-textarea span {
+    visibility: visible;
     font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: normal;
