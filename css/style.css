@@ -362,7 +362,6 @@ textarea {
 
 footer {
   background-color: #1a2236;
-  width: 100vw;
   height: 56.875vw;
 }
 
@@ -469,7 +468,7 @@ footer {
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 48.75vw 61vw;
-    flex: 1 1 50vw;
+    flex: 1 1;
   }
 
   .main-text {
@@ -478,7 +477,7 @@ footer {
     background-repeat: no-repeat;
     background-size: 12.15vw 12.15vw;
     height: inherit;
-    flex: 1 1 50vw;
+    flex: 1 1;
   }
 
   .name h1 {
@@ -513,6 +512,7 @@ footer {
     font-size: 1.25vw;
     text-align: center;
     color: #fff;
+    border-color: #1a2236;
   }
 
   .btn {
@@ -888,7 +888,6 @@ footer {
     background-repeat: no-repeat, no-repeat;
     background-size: 24.3vw 18.26vw, 24.3vw 24.3vw;
     margin: 0;
-    width: 100vw;
     align-content: center;
     justify-content: center;
     padding: 6vw 0 0;
