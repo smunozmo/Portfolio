@@ -2,6 +2,8 @@
 
 > Welcome to my personal portfolio, feel free to look around.
 
+- Live version: [GitHub Page](https://smunozmo.github.io/Portfolio/)
+
 ![screenshot](./portfolio_screenshot.jpg)
 
 ## Built With
