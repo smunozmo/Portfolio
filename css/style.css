@@ -269,6 +269,12 @@ h2 {
 
 /* Contact form start */
 
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
 .contact-form {
   background: #f9f9fa;
   background-image: url('../assets/img/image_geometry_1.png');
@@ -332,6 +338,19 @@ textarea {
   font-size: 4.375vw;
   color: #1a2236;
   width: 90%;
+  outline: none;
+}
+
+.float-container:focus-within, .float-textarea:focus-within, textarea:focus-within {
+  background-color: lightcyan;
+  transition: 500ms ease-in-out;
+  border: none;
+  box-shadow: none;
+
+}
+
+textarea:focus-within, input:focus-within {
+  box-shadow: none;
 }
 
 .float-container {
@@ -352,6 +371,7 @@ textarea {
   margin-bottom: 2.5vw;
   padding: 0 2.5vw;
   position: relative;
+  outline: none;
 }
 
 .float-textarea span {
@@ -403,6 +423,15 @@ footer {
 @media (min-width: 1000px) {
   body {
     background-image: none;
+  }
+
+  :focus {
+    /* border: 3px solid orange; */
+    transition: 100ms ease-in-out;
+    outline: none;
+    -webkit-box-shadow:inset 0vw -1vw 1vw -0.5vw orange;
+    -moz-box-shadow:inset 0vw -1vw 1vw -0.5vw orange;
+    box-shadow:inset 0vw -1vw 1vw -0.5vw orange;
   }
 
   .flex-nav a {
@@ -555,7 +584,7 @@ footer {
   }
 
   .picture img {
-    display: none;
+    visibility: hidden;
   }
 
   .project-top1 {
@@ -607,7 +636,7 @@ footer {
     top: -24vw;
   }
 
-  .project-bottom-type1:hover {
+  .project-bottom-type1:hover, .project-bottom-type1:focus-within {
     opacity: 100%;
     background-color: #1a2236;
     float: right;
@@ -623,7 +652,7 @@ footer {
     top: -28.2vw;
   }
 
-  .project-bottom-type2:hover {
+  .project-bottom-type2:hover, .project-bottom-type2:focus-within {
     opacity: 100%;
     background-color: #1a2236;
     float: right;
@@ -639,7 +668,7 @@ footer {
     top: -36.32vw;
   }
 
-  .project-bottom-type3:hover {
+  .project-bottom-type3:hover, .project-bottom-type3:focus-within {
     opacity: 100%;
     background-color: #1a2236;
     float: right;
