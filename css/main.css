@@ -56,7 +56,7 @@ h2 {
   color: #fff;
 }
 
-.flex-nav .menu-icon {
+.flex-nav .menu-open {
   color: #1a2236;
   font-size: 7.5vw;
   text-align: right;
@@ -66,14 +66,21 @@ h2 {
 }
 
 @media (min-width: 1000px) {
-  .flex-nav .menu-icon {
+  .flex-nav .menu-open {
     display: none;
   }
 }
 
 .flex-nav .menu {
   display: none;
-  justify-content: flex-end;
+  justify-content: center;
+  position: relative;
+  top: -17.5vw;
+  height: 177.5vw;
+  flex-direction: column;
+  background: url(../assets/img/menu-mobile.png) no-repeat;
+  background-size: cover;
+  background-position-y: 0;
 }
 
 @media (min-width: 1000px) {
@@ -89,12 +96,29 @@ h2 {
     align-items: center;
     border: 1px solid #dddfe6;
   }
+}
+
+.flex-nav .menu a {
+  font-size: 5vw;
+  align-self: center;
+  margin: 4vw 0;
+}
+
+@media (min-width: 1000px) {
   .flex-nav .menu a {
     margin: 0 3.47vw;
   }
   .flex-nav .menu a:hover {
     border-bottom: 0.14vw solid #1a2236;
   }
+}
+
+.flex-nav .menu .menu-close {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  top: 9.5vw;
+  right: 5.8vw;
 }
 
 .about {
