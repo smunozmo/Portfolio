@@ -1,0 +1,82 @@
+.intro p {
+  padding: 6.25vw 5vw 0;
+  font-size: 4.375vw;
+
+  @media (min-width: $bp) {
+    padding: 4.16vw 6.53vw 0 11.11vw;
+    font-size: 1vw;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  @media (min-width: $bp) {
+    height: 61vw;
+    flex-direction: row;
+  }
+
+  .main-text {
+    overflow: hidden;
+
+    @media (min-width: $bp) {
+      background-image: url("../assets/img/image_dots.png");
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      background-size: 12.15vw 12.15vw;
+      height: inherit;
+      flex: 1 1;
+    }
+  }
+
+  .name h1 {
+    padding: 32.5vw 0 0 5vw;
+    font-size: 15.6vw;
+    line-height: 100%;
+    overflow-y: hidden;
+
+    @media (min-width: $bp) {
+      padding: 6.25vw 0 0 11.11vw;
+      font-size: 7.64vw;
+      line-height: 100%;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    padding: 6.25vw 5vw 10vw;
+
+    @media (min-width: $bp) {
+      width: 17.64vw;
+      padding: 0.15vw 5vw 0.15vw 11.11vw;
+    }
+  }
+
+  .geometry {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    @media (min-width: $bp) {
+      background-image: url("../assets/img/image-geometry_3.png");
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 48.75vw 61vw;
+      flex: 1 1;
+      height: 100%;
+    }
+
+    img {
+      flex: 1;
+      width: 100vw;
+
+      @media (min-width: $bp) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,347 @@
+.projects {
+  overflow: hidden;
+  margin-top: 12.5vw;
+
+  @media (min-width: $bp) {
+    background-image: url("../assets/img/Group\ 117.png");
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .grid-container1 {
+    @include grid-container(38.75vw);
+
+    @media (min-width: $bp) {
+      width: 66.66vw;
+      margin-left: -18vw;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .grid-container2 {
+    @include grid-container(18.75vw);
+
+    @media (min-width: $bp) {
+      width: 32.4vw;
+      margin-top: 5.555vw;
+
+      .project-bottom-type3 {
+        top: -16.2vw;
+        left: -1.65vw;
+      }
+    }
+  }
+
+  .grid-container3 {
+    @include grid-container(18.75vw);
+
+    @media (min-width: $bp) {
+      width: 32.4vw;
+      margin: 0;
+
+      .project-bottom-type3 {
+        top: -16.2vw;
+        left: -1.1vw;
+      }
+    }
+  }
+
+  .grid-container4 {
+    @include grid-container(18.75vw);
+
+    @media (min-width: $bp) {
+      width: 55.555vw;
+      height: 32.3vw;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .grid-container5 {
+    @include grid-container(18.75vw);
+
+    @media (min-width: $bp) {
+      width: 32.4vw;
+      margin-top: -5.5vw;
+
+      .project-bottom-type3 {
+        top: -16.1vw;
+        left: -1.1vw;
+      }
+    }
+  }
+
+  .grid-container6 {
+    @include grid-container(18.75vw);
+
+    @media (min-width: $bp) {
+      width: 32.4vw;
+      margin-top: 0;
+      margin-right: 12vw;
+
+      .project-bottom-type3 {
+        top: -16.1vw;
+      }
+    }
+  }
+
+  h1 {
+    padding: 1.25vw 0 10vw 5vw;
+    font-size: 15.625vw;
+
+    @media (min-width: $bp) {
+      writing-mode: vertical-rl;
+      transform: scale(-1);
+      align-self: flex-start;
+      font-size: 7.64vw;
+      padding: 0;
+      margin-left: 10vw;
+    }
+  }
+
+  .picture {
+    grid-column: 1 / 5;
+    grid-row: 1;
+  }
+
+  .project-grid-item {
+    grid-column: 1 / 5;
+    grid-row: 2;
+    padding-top: 6.25vw;
+  }
+
+  .project-lang {
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    padding-top: 3.125vw;
+    margin-left: 6.25vw;
+    text-align: center;
+
+    li {
+      width: auto;
+      background-color: $tertiary-color;
+      padding: 1.875vw 3.125vw;
+      font-size: 3.2vw;
+      color: $primary-color;
+    }
+  }
+
+  .project-btn-grid {
+    grid-column: 1 / 4;
+    grid-row: 4;
+  }
+
+  .project-name {
+    font-size: 6.25vw;
+    color: $light-color;
+    padding-left: 6.25vw;
+  }
+
+  .picture img {
+    width: 100%;
+  }
+
+  button {
+    margin: 6vw;
+  }
+
+  .projects-btn-grid {
+    width: auto;
+    margin: 8vw 0 15vw 5vw;
+    font-size: 5vw;
+    text-align: center;
+
+    img {
+      width: 6.43vw;
+      height: 5.31vw;
+      padding: 1.56vw 0 0 0;
+      vertical-align: -0.625vw;
+
+      @media (min-width: $bp) {
+        width: 1.43vw;
+        height: 1.43vw;
+        vertical-align: -0.35vw;
+      }
+    }
+  }
+
+  .project-bottom-type1 {
+    @include project-bottom(-25vw);
+    @include project-lang(2.8vw);
+
+    @media (min-width: $bp) {
+      width: 66.66vw;
+      height: 24vw;
+      margin: 0;
+    }
+
+    .project-lang {
+      @media (min-width: $bp) {
+        width: 35vw;
+        flex-basis: 50%;
+      }
+    }
+
+    li {
+      @media (min-width: $bp) {
+        padding: 0.5vw 2vw;
+        font-size: 100%;
+        margin: -2vw 0 0 -2vw;
+        align-self: flex-start;
+      }
+    }
+
+    .project-grid-item {
+      @media (min-width: $bp) {
+        margin: -5vw 0 -2vw 0;
+
+        .project-name {
+          font-size: 4.1vw;
+          padding: 0 0 0 4.16vw;
+        }
+      }
+    }
+
+    .project-btn-grid {
+      @media (min-width: $bp) {
+        font-size: 1.25vw;
+        flex-basis: 50%;
+        padding: 0;
+        margin: 0 0 0 -3.8vw;
+
+        button {
+          @media (min-width: $bp) {
+            width: 17.64vw;
+            margin: 0;
+            padding: 1vw 0.1vw 1vw 0.1vw;
+          }
+        }
+      }
+    }
+  }
+
+  .project-bottom-type2 {
+    @include project-bottom(-24.7vw);
+    @include project-lang(2.3vw);
+
+    @media (min-width: $bp) {
+      width: 55.555vw;
+      height: 23.75vw;
+      left: -2.3vw;
+    }
+
+    .project-lang {
+      @media (min-width: $bp) {
+        width: 100%;
+        flex-basis: 65%;
+        margin: -3vw 0 0 2.3vw;
+      }
+    }
+
+    li {
+      @media (min-width: $bp) {
+        padding: 0.5vw 2vw;
+        font-size: 100%;
+        margin-left: 2vw;
+        align-self: flex-start;
+      }
+    }
+
+    .project-grid-item {
+      @media (min-width: $bp) {
+        margin: -5vw 0 -2vw 0;
+
+        .project-name {
+          font-size: 4.1vw;
+          padding: 0 0 0 4.16vw;
+        }
+      }
+    }
+
+    .project-btn-grid {
+      @media (min-width: $bp) {
+        font-size: 1.25vw;
+        flex-basis: 100%;
+        padding: 0;
+        margin: 0 0 0 -15vw;
+
+        button {
+          @media (min-width: $bp) {
+            width: 17.64vw;
+            margin: 0;
+            padding: 1vw 0.1vw 1vw 0.1vw;
+          }
+        }
+      }
+    }
+  }
+
+  .project-bottom-type3 {
+    @include project-bottom(-17.6vw);
+    @include project-lang(1.2vw);
+
+    @media (min-width: $bp) {
+      width: 32.3vw;
+      height: 15.139vw;
+      left: -1.1vw;
+    }
+
+    .project-lang {
+      @media (min-width: $bp) {
+        width: 100%;
+        flex-basis: 75%;
+        margin: -2vw 0 0 3vw;
+      }
+    }
+
+    li {
+      @media (min-width: $bp) {
+        padding: 0.5vw;
+        font-size: 100%;
+        margin-left: 1vw;
+        align-self: flex-start;
+      }
+    }
+
+    .project-grid-item {
+      @media (min-width: $bp) {
+        margin: -5vw 0 -2vw 0;
+
+        .project-name {
+          font-size: 2.7vw;
+          padding: 0 0 0 4.16vw;
+        }
+      }
+    }
+
+    .project-btn-grid {
+      @media (min-width: $bp) {
+        flex-basis: 50%;
+        padding: 0;
+        margin: 0 0 0 3.8vw;
+
+        button {
+          @media (min-width: $bp) {
+            width: 17.64vw;
+            margin: 0;
+            padding: 1vw 0.1vw 1vw 0.1vw;
+          }
+        }
+      }
+    }
+  }
+
+  .separator {
+    @media (min-width: $bp) {
+      width: 50vw;
+    }
+  }
+}

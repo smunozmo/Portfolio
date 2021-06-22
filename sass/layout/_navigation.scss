@@ -1,0 +1,36 @@
+.flex-nav {
+  .menu-icon {
+    color: $primary-color;
+    font-size: 7.5vw;
+    text-align: right;
+    padding: 6.25vw 5vw 0 0;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (min-width: $bp) {
+      display: none;
+    }
+  }
+
+  .menu {
+    display: none;
+    justify-content: flex-end;
+
+    @media (min-width: $bp) {
+      @include flex-row-center;
+      @include font-normal($primary-font, $primary-color);
+
+      height: 7vw;
+      align-items: center;
+      border: 1px solid #dddfe6;
+
+      a {
+        margin: 0 3.47vw;
+
+        &:hover {
+          border-bottom: 0.14vw solid $primary-color;
+        }
+      }
+    }
+  }
+}
