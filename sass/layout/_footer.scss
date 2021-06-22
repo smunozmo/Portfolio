@@ -1,0 +1,69 @@
+footer {
+  background-color: $primary-color;
+  height: 56.875vw;
+
+  @media (min-width: $bp) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 8.54vw;
+  }
+
+  .get-resume {
+    padding: 10vw 0 0 5vw;
+    display: flex;
+    justify-content: start;
+
+    @media (min-width: $bp) {
+      flex: 1 1 50%;
+      justify-content: center;
+      align-content: center;
+      padding: 0;
+    }
+
+    a {
+      @include font-normal($primary-font, $tertiary-color);
+
+      font-size: 5vw;
+      color: $tertiary-color;
+
+      @media (min-width: $bp) {
+        font-size: 1.25vw;
+        align-self: center;
+      }
+    }
+
+    img {
+      padding-left: 5vw;
+      height: 5.6vw;
+      width: 5.6vw;
+      align-self: center;
+
+      @media (min-width: $bp) {
+        padding: 0 30vw 0 1.666vw;
+        height: 1.666vw;
+        width: 1.666vw;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10vw 0 1.25vw;
+    background-color: $primary-color;
+
+    @media (min-width: $bp) {
+      flex: 1 1 50%;
+      padding: 0 11.11vw 0 0;
+      align-self: center;
+      max-width: 20.55vw;
+    }
+
+    img {
+      align-items: center;
+    }
+  }
+}

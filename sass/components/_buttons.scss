@@ -1,0 +1,22 @@
+button {
+  background-color: $primary-color;
+  width: 90%;
+  padding: 3.125vw 0;
+  margin: 3.125vw 0;
+  font-size: 5vw;
+  text-align: center;
+  color: $light-color;
+  border-color: $light-color;
+
+  &:hover {
+    background-color: $light-color;
+    color: $primary-color;
+  }
+
+  @media (min-width: $bp) {
+    // width: 90%;
+    padding: 1.5vw 0;
+    margin: 3.125vw 0;
+    font-size: 1.25vw;
+  }
+}

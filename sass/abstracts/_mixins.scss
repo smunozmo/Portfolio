@@ -1,0 +1,84 @@
+@mixin decoration {
+  text-decoration: none;
+  list-style: none;
+}
+
+@mixin font-normal($font, $color) {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  color: $color;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin project-bottom($top) {
+  @media (min-width: $bp) {
+    flex-wrap: wrap;
+    opacity: 0%;
+    background-color: $primary-color;
+    float: right;
+    position: relative;
+    top: $top;
+
+    &:hover,
+    &:focus-within {
+      opacity: 100%;
+    }
+  }
+}
+
+@mixin project-lang($left) {
+  @media (min-width: $bp) {
+    display: flex;
+    width: auto;
+    justify-content: flex-start;
+    padding-top: 1vw;
+    margin-left: $left;
+    text-align: center;
+  }
+}
+
+@mixin grid-container($height) {
+  display: grid;
+  background-color: $primary-color;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+
+  @media (min-width: $bp) {
+    background: transparent;
+    width: unset;
+    height: $height;
+
+    .picture {
+      width: inherit;
+      height: inherit;
+    }
+  }
+}
+
+@mixin about-card($bg-color, $bg-url) {
+  background-image: $bg-url;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: $bg-color;
+  background-size: 31.875vw;
+  margin: 5vw;
+  flex: 1;
+  min-width: 90.625vw;
+  min-height: 90.625vw;
+
+  @media (min-width: $bp) {
+    max-width: 20vw;
+    max-height: 20vw;
+    min-width: 20vw;
+    min-height: 20vw;
+    background-size: 7vw;
+    margin: 0;
+  }
+}
