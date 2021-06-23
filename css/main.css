@@ -17,6 +17,10 @@
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :focus {
   transition: 100ms ease-in-out;
   outline: none;
@@ -1251,5 +1255,92 @@ button:hover {
     margin: 3.125vw 0;
     font-size: 1.25vw;
   }
+}
+
+.modal {
+  display: none;
+  transform: scale(0);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.modal .modal-container {
+  margin: 0 6.25vw 0 6.25vw;
+}
+
+.modal .modal-container h2 {
+  margin: 17.8vw 0 7.2vw 0;
+  color: #1a2236;
+  font-weight: 800;
+  padding: 0;
+}
+
+.modal .modal-container .project-lang {
+  display: flex;
+}
+
+.modal .modal-container .project-lang li {
+  border: 1px solid #1a2236;
+  font-size: 3.3vw;
+  padding: 0.5vw 1vw;
+  margin: 0 3vw 5.625vw 0;
+}
+
+.modal .modal-container .big-pic img {
+  width: 87.4vw;
+}
+
+.modal .modal-container .thumbnails {
+  display: flex;
+  margin: -1vw 0 0 0;
+}
+
+.modal .modal-container .thumbnails img {
+  border: 1px solid #dddfe6;
+  width: 21.8vw;
+}
+
+.modal .modal-container .intro {
+  font-size: 5.625vw;
+  margin: 9vw 0;
+}
+
+.modal .modal-container .modal-buttons {
+  text-align: center;
+}
+
+.modal .modal-container .modal-buttons button {
+  border-color: #1a2236;
+  color: #1a2236;
+  background-color: #fff;
+}
+
+.modal .modal-container .modal-buttons button img {
+  position: relative;
+  left: 20vw;
+  vertical-align: middle;
+}
+
+.modal .modal-container .modal-close {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  top: 9.5vw;
+  right: 5.8vw;
+}
+
+.modal .modal-container .modal-close:hover, .modal .modal-container .modal-close:focus {
+  cursor: pointer;
+}
+
+.modal.active {
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */

@@ -12,6 +12,10 @@
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :focus {
   transition: 100ms ease-in-out;
   outline: none;
