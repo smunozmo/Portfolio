@@ -1,6 +1,6 @@
 .modal {
-  display: none;
-  transform: scale(0);
+  display: flex;
+//   transform: scale(0);
   position: fixed;
   z-index: 1;
   left: 0;
@@ -10,30 +10,59 @@
   background-color: $light-color;
   transition: 0.2s ease-in-out;
 
+  @media (min-width: $bp) {
+      background-color: $primary-color;
+      overflow-y: scroll;
+  }
+
   .modal-container {
     margin: 0 6.25vw 0 6.25vw;
+    background-color: $light-color;
+
+    @media (min-width: $bp) {
+        
+        margin: 0;
+        width: 90vw;
+        border: 4.861vw solid $primary-color;
+    }
 
     h2 {
       margin: 17.8vw 0 7.2vw 0;
       color: $primary-color;
       font-weight: 800;
       padding: 0;
+
+      @media (min-width: $bp) {
+          font-size: 4.167vw;
+          margin: 4.167vw 0 2.36vw 4.167vw;
+         
+      }
     }
 
     .project-lang {
       display: flex;
+      margin-left: 4.167vw;
 
       li {
         border: 1px solid $primary-color;
         font-size: 3.3vw;
         padding: 0.5vw 1vw;
         margin: 0 3vw 5.625vw 0;
+
+        @media (min-width: $bp) {
+            font-size: 1.389vw;
+            margin: 0 1.7vw 2.778vw 0;
+        }
       }
     }
 
     .big-pic {
       img {
-        width: 87.4vw;
+        width: 81.875vw;
+
+        @media (min-width: $bp) {
+            margin-left: 4.167vw;
+        }
       }
     }
 

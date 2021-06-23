@@ -17,10 +17,6 @@
   }
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 :focus {
   transition: 100ms ease-in-out;
   outline: none;
@@ -1258,8 +1254,7 @@ button:hover {
 }
 
 .modal {
-  display: none;
-  transform: scale(0);
+  display: flex;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -1270,8 +1265,24 @@ button:hover {
   transition: 0.2s ease-in-out;
 }
 
+@media (min-width: 1000px) {
+  .modal {
+    background-color: #1a2236;
+    overflow-y: scroll;
+  }
+}
+
 .modal .modal-container {
   margin: 0 6.25vw 0 6.25vw;
+  background-color: #fff;
+}
+
+@media (min-width: 1000px) {
+  .modal .modal-container {
+    margin: 0;
+    width: 90vw;
+    border: 4.861vw solid #1a2236;
+  }
 }
 
 .modal .modal-container h2 {
@@ -1281,8 +1292,16 @@ button:hover {
   padding: 0;
 }
 
+@media (min-width: 1000px) {
+  .modal .modal-container h2 {
+    font-size: 4.167vw;
+    margin: 4.167vw 0 2.36vw 4.167vw;
+  }
+}
+
 .modal .modal-container .project-lang {
   display: flex;
+  margin-left: 4.167vw;
 }
 
 .modal .modal-container .project-lang li {
@@ -1292,8 +1311,21 @@ button:hover {
   margin: 0 3vw 5.625vw 0;
 }
 
+@media (min-width: 1000px) {
+  .modal .modal-container .project-lang li {
+    font-size: 1.389vw;
+    margin: 0 1.7vw 2.778vw 0;
+  }
+}
+
 .modal .modal-container .big-pic img {
-  width: 87.4vw;
+  width: 81.875vw;
+}
+
+@media (min-width: 1000px) {
+  .modal .modal-container .big-pic img {
+    margin-left: 4.167vw;
+  }
 }
 
 .modal .modal-container .thumbnails {

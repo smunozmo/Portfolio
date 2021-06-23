@@ -40,8 +40,7 @@ const contentModal = `
            <button href="${infoModal.liveUrl}" type="button">See live<img src="assets/img/ic_link.svg" alt=""></button>
            <button href="${infoModal.seeUrl}" type="button">See code<img src="assets/img/ic_github_black.svg" alt=""></button>
          </div>
-      </div>
-`;
+      </div>`;
 
 // Mobile Menu Functions
 function menuOpen() {
