@@ -17,6 +17,10 @@
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :focus {
   transition: 100ms ease-in-out;
   outline: none;
@@ -1255,6 +1259,7 @@ button:hover {
 
 .modal {
   display: flex;
+  transform: scale(0);
   position: fixed;
   z-index: 1;
   left: 0;
@@ -1267,7 +1272,7 @@ button:hover {
 
 @media (min-width: 1000px) {
   .modal {
-    background-color: #1a2236;
+    background: transparent;
     overflow-y: scroll;
   }
 }
@@ -1279,8 +1284,9 @@ button:hover {
 
 @media (min-width: 1000px) {
   .modal .modal-container {
+    height: 130vw;
     margin: 0;
-    width: 90vw;
+    width: 100%;
     border: 4.861vw solid #1a2236;
   }
 }
@@ -1333,9 +1339,21 @@ button:hover {
   margin: -1vw 0 0 0;
 }
 
+@media (min-width: 1000px) {
+  .modal .modal-container .thumbnails {
+    margin-left: 4.167vw;
+  }
+}
+
 .modal .modal-container .thumbnails img {
   border: 1px solid #dddfe6;
   width: 21.8vw;
+}
+
+@media (min-width: 1000px) {
+  .modal .modal-container .thumbnails img {
+    width: 20.35vw;
+  }
 }
 
 .modal .modal-container .intro {
@@ -1343,8 +1361,25 @@ button:hover {
   margin: 9vw 0;
 }
 
+@media (min-width: 1000px) {
+  .modal .modal-container .intro {
+    font-size: 1.25vw;
+    height: 15vw;
+    width: 48.611vw;
+    margin: 4.792vw 20.833vw 2.778vw 20.833vw;
+  }
+}
+
 .modal .modal-container .modal-buttons {
   text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .modal .modal-container .modal-buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 4.792vw 20.833vw 0 20.833vw;
+  }
 }
 
 .modal .modal-container .modal-buttons button {
@@ -1353,10 +1388,49 @@ button:hover {
   background-color: #fff;
 }
 
+@media (min-width: 1000px) {
+  .modal .modal-container .modal-buttons button {
+    width: 17.083vw;
+    height: 3.542vw;
+    font-size: 1.25vw;
+    margin: 0 2vw 0 0;
+    vertical-align: middle;
+    padding: 10px;
+  }
+}
+
 .modal .modal-container .modal-buttons button img {
-  position: relative;
-  left: 20vw;
+  float: right;
+  margin-right: 2vw;
   vertical-align: middle;
+}
+
+@media (min-width: 1000px) {
+  .modal .modal-container .modal-buttons button img {
+    margin-right: 0.3vw;
+  }
+}
+
+.modal .modal-container .modal-links {
+  display: none;
+  height: 100%;
+}
+
+@media (min-width: 1000px) {
+  .modal .modal-container .modal-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 8.333vw 20.833vw 0 20.833vw;
+  }
+}
+
+.modal .modal-container .modal-links a {
+  color: #7d7c84;
+}
+
+.modal .modal-container .modal-links a img {
+  vertical-align: middle;
+  margin: 0 1vw 0 1vw;
 }
 
 .modal .modal-container .modal-close {

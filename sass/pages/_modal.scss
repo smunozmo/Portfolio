@@ -1,19 +1,18 @@
 .modal {
   display: flex;
-//   transform: scale(0);
+  transform: scale(0);
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
-  height: 118vh;
+  height: 100%;
   background-color: $light-color;
   transition: 0.2s ease-in-out;
 
   @media (min-width: $bp) {
-      background-color: $primary-color;
-      overflow-y: scroll;
-      height: 118vh;
+    background: transparent;
+    overflow-y: scroll;
   }
 
   .modal-container {
@@ -21,10 +20,10 @@
     background-color: $light-color;
 
     @media (min-width: $bp) {
-        
-        margin: 0;
-        width: 90vw;
-        border: 4.861vw solid $primary-color;
+      height: 130vw;
+      margin: 0;
+      width: 100%;
+      border: 4.861vw solid $primary-color;
     }
 
     h2 {
@@ -34,9 +33,8 @@
       padding: 0;
 
       @media (min-width: $bp) {
-          font-size: 4.167vw;
-          margin: 4.167vw 0 2.36vw 4.167vw;
-         
+        font-size: 4.167vw;
+        margin: 4.167vw 0 2.36vw 4.167vw;
       }
     }
 
@@ -51,8 +49,8 @@
         margin: 0 3vw 5.625vw 0;
 
         @media (min-width: $bp) {
-            font-size: 1.389vw;
-            margin: 0 1.7vw 2.778vw 0;
+          font-size: 1.389vw;
+          margin: 0 1.7vw 2.778vw 0;
         }
       }
     }
@@ -62,7 +60,7 @@
         width: 81.875vw;
 
         @media (min-width: $bp) {
-            margin-left: 4.167vw;
+          margin-left: 4.167vw;
         }
       }
     }
@@ -71,29 +69,83 @@
       display: flex;
       margin: -1vw 0 0 0;
 
+      @media (min-width: $bp) {
+        margin-left: 4.167vw;
+      }
+
       img {
         border: 1px solid $secondary-color;
         width: 21.8vw;
+
+        @media (min-width: $bp) {
+          width: 20.35vw;
+        }
       }
     }
 
     .intro {
       font-size: 5.625vw;
       margin: 9vw 0;
+
+      @media (min-width: $bp) {
+        font-size: 1.25vw;
+        height: 15vw;
+        width: 48.611vw;
+        margin: 4.792vw 20.833vw 2.778vw 20.833vw;
+      }
     }
 
     .modal-buttons {
       text-align: center;
+
+      @media (min-width: $bp) {
+        display: flex;
+        flex-direction: row;
+        margin: 4.792vw 20.833vw 0 20.833vw;
+      }
 
       button {
         border-color: $primary-color;
         color: $primary-color;
         background-color: $light-color;
 
-        img {
-          position: relative;
-          left: 20vw;
+        @media (min-width: $bp) {
+          width: 17.083vw;
+          height: 3.542vw;
+          font-size: 1.25vw;
+          margin: 0 2vw 0 0;
           vertical-align: middle;
+          padding: 10px;
+        }
+
+        img {
+          float: right;
+          margin-right: 2vw;
+          vertical-align: middle;
+
+          @media (min-width: $bp) {
+            margin-right: 0.3vw;
+          }
+        }
+      }
+    }
+
+    .modal-links {
+      display: none;
+      height: 100%;
+
+      @media (min-width: $bp) {
+        display: flex;
+        justify-content: space-between;
+        margin: 8.333vw 20.833vw 0 20.833vw;
+      }
+
+      a {
+        color: $quinary-color;
+
+        img {
+          vertical-align: middle;
+          margin: 0 1vw 0 1vw;
         }
       }
     }

@@ -40,6 +40,10 @@ const contentModal = `
            <button href="${infoModal.liveUrl}" type="button">See live<img src="assets/img/ic_link.svg" alt=""></button>
            <button href="${infoModal.seeUrl}" type="button">See code<img src="assets/img/ic_github_black.svg" alt=""></button>
          </div>
+         <div class="modal-links">
+           <a href="#"><img src="assets/img/ic_arrow_left.svg" alt=""> Previous project</a>
+           <a href="#">Next project <img src="assets/img/ic_arrow_right.svg" alt=""></a>
+         </div>
       </div>`;
 
 // Mobile Menu Functions
@@ -52,8 +56,8 @@ function menuClose() {
 
 // Modal Functions
 function modalClose() {
-  containerModal.classList.remove('active');
   containerModal.innerHTML -= contentModal;
+  containerModal.classList.remove('active');
 }
 
 function modalOpen() {
@@ -63,6 +67,7 @@ function modalOpen() {
 
   const closeModal = document.querySelector('.modal-close');
   closeModal.addEventListener('click', modalClose);
+  containerModal.classList.add('active');
 }
 
 // Mobile Menu Events
