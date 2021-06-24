@@ -121,3 +121,15 @@ closeMenu.addEventListener('click', menuClose);
 openModal.forEach((button) => {
   button.addEventListener('click', modalOpen);
 });
+
+// Form Validation
+const mail = document.getElementById('mail');
+const submitBtn = document.getElementById('submitBtn');
+
+submitBtn.addEventListener('click', () => {
+  if (mail.value.toLowerCase() !== mail.value) {
+    submitBtn.setCustomValidity('Oops! Email should be lowercase only please.');
+  } else {
+    submitBtn.setCustomValidity('');
+  }
+});
