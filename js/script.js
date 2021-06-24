@@ -7,38 +7,55 @@ const linkMenu = document.querySelectorAll('.menu a');
 // Modal Variables
 const containerModal = document.querySelector('.modal');
 const openModal = document.querySelectorAll('.modal-open');
-const infoModal = {
-  title: 'Project name goes here',
-  language: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-  img: 'assets/img/Project2.png',
-  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> <br>
-  Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.`,
-  liveUrl: '#',
-  seeUrl: '#',
-};
+
+const infoModalImage = [];
+document.querySelectorAll('.picture > img').forEach((item) => {
+  infoModalImage.push(item.getAttribute('src'));
+});
+
+const infoModalTitle = [];
+document.querySelectorAll('.project-name').forEach((item) => {
+  infoModalTitle.push(item.textContent);
+});
+
+const infoModalLanguage = ['HTML', 'CSS', 'JavaScript', 'Ruby On Rails', 'GitHub'];
+const infoModalDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
+const infoModalliveUrl = '#';
+const infoModalseeUrl = '#';
+
+const infoModal = {};
+for (let i = 0; i < 3; i += 1) {
+  infoModal[`infoModal${i}`] = {};
+  infoModal[`infoModal${i}`].image = infoModalImage[i];
+  infoModal[`infoModal${i}`].title = infoModalTitle[i];
+  infoModal[`infoModal${i}`].language = infoModalLanguage;
+  infoModal[`infoModal${i}`].description = infoModalDescription;
+  infoModal[`infoModal${i}`].liveUrl = infoModalliveUrl;
+  infoModal[`infoModal${i}`].seeUrl = infoModalseeUrl;
+}
 
 const contentModal = `
 <div class="modal-container">
         <div class="modal-close"><img src="assets/img/Union.svg" alt=""></div>
-        <h2>${infoModal.title}</h2>
+        <h2>${infoModal.infoModal0.title}</h2>
         <ul class="project-lang">
-          <li>${infoModal.language[0]}</li>
-          <li>${infoModal.language[1]}</li>
-          <li>${infoModal.language[2]}</li>
+          <li>${infoModal.infoModal0.language[0]}</li>
+          <li>${infoModal.infoModal0.language[1]}</li>
+          <li>${infoModal.infoModal0.language[2]}</li>
         </ul>
         <div class="big-pic">
-          <img src="${infoModal.img}" alt="">
+          <img src="${infoModal.infoModal0.image}" alt="">
         </div>
         <ul class="thumbnails">
-          <li><img src="${infoModal.img}" alt=""></li>
-          <li><img src="${infoModal.img}" alt=""></li>
-          <li><img src="${infoModal.img}" alt=""></li>
-          <li><img src="${infoModal.img}" alt=""></li>
+          <li><img src="${infoModal.infoModal0.image}" alt=""></li>
+          <li><img src="${infoModal.infoModal0.image}" alt=""></li>
+          <li><img src="${infoModal.infoModal0.image}" alt=""></li>
+          <li><img src="${infoModal.infoModal0.image}" alt=""></li>
         </ul>
-        <p class="intro">${infoModal.description}</p>
+        <p class="intro">${infoModal.infoModal0.description}</p>
          <div class="modal-buttons">
-           <button href="${infoModal.liveUrl}" type="button">See live<img src="assets/img/ic_link.svg" alt=""></button>
-           <button href="${infoModal.seeUrl}" type="button">See code<img src="assets/img/ic_github_black.svg" alt=""></button>
+           <button href="${infoModal.infoModal0.liveUrl}" type="button">See live<img src="assets/img/ic_link.svg" alt=""></button>
+           <button href="${infoModal.infoModal0.seeUrl}" type="button">See code<img src="assets/img/ic_github_black.svg" alt=""></button>
          </div>
          <div class="modal-links">
            <a href="#"><img src="assets/img/ic_arrow_left.svg" alt=""> Previous project</a>
