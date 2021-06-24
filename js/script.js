@@ -7,55 +7,77 @@ const linkMenu = document.querySelectorAll('.menu a');
 // Modal Variables
 const containerModal = document.querySelector('.modal');
 const openModal = document.querySelectorAll('.modal-open');
-
-const infoModalImage = [];
-document.querySelectorAll('.picture > img').forEach((item) => {
-  infoModalImage.push(item.getAttribute('src'));
-});
-
-const infoModalTitle = [];
-document.querySelectorAll('.project-name').forEach((item) => {
-  infoModalTitle.push(item.textContent);
-});
-
-const infoModalLanguage = ['HTML', 'CSS', 'JavaScript', 'Ruby On Rails', 'GitHub'];
-const infoModalDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
-const infoModalliveUrl = '#';
-const infoModalseeUrl = '#';
-
-const infoModal = {};
-for (let i = 0; i < 3; i += 1) {
-  infoModal[`infoModal${i}`] = {};
-  infoModal[`infoModal${i}`].image = infoModalImage[i];
-  infoModal[`infoModal${i}`].title = infoModalTitle[i];
-  infoModal[`infoModal${i}`].language = infoModalLanguage;
-  infoModal[`infoModal${i}`].description = infoModalDescription;
-  infoModal[`infoModal${i}`].liveUrl = infoModalliveUrl;
-  infoModal[`infoModal${i}`].seeUrl = infoModalseeUrl;
+class Project {
+  constructor(title, language, image, description, liveUrl, seeUrl) {
+    this.title = title;
+    this.language = language;
+    this.image = image;
+    this.description = description;
+    this.liveUrl = liveUrl;
+    this.seeUrl = seeUrl;
+  }
 }
+
+const project1 = new Project(
+  'Project name goes here',
+  ['HTML', 'Ruby On Rails', 'JavaScript'],
+  'assets/img/Project2.png',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  'https://github.com',
+  'https://microverse.org',
+);
+
+const project2 = new Project(
+  'Project name goes here',
+  ['HTML', 'Ruby On Rails', 'JavaScript'],
+  'assets/img/Project2.png',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  'https://github.com',
+  'https://microverse.org',
+);
+
+const project3 = new Project(
+  'Project name goes here',
+  ['HTML', 'Ruby On Rails', 'JavaScript'],
+  'assets/img/Project2.png',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  'https://github.com',
+  'https://microverse.org',
+);
+
+const project4 = new Project(
+  'Project name goes here',
+  ['HTML', 'Ruby On Rails', 'JavaScript'],
+  'assets/img/Project2.png',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+  'https://github.com',
+  'https://microverse.org',
+);
+
+const infoModal = [project1, project2, project3, project4];
 
 const contentModal = `
 <div class="modal-container">
         <div class="modal-close"><img src="assets/img/Union.svg" alt=""></div>
-        <h2>${infoModal.infoModal0.title}</h2>
+        <h2>${infoModal[0].title}</h2>
         <ul class="project-lang">
-          <li>${infoModal.infoModal0.language[0]}</li>
-          <li>${infoModal.infoModal0.language[1]}</li>
-          <li>${infoModal.infoModal0.language[2]}</li>
+          <li>${infoModal[0].language[0]}</li>
+          <li>${infoModal[0].language[1]}</li>
+          <li>${infoModal[0].language[2]}</li>
         </ul>
         <div class="big-pic">
-          <img src="${infoModal.infoModal0.image}" alt="">
+          <img src="${infoModal[0].image}" alt="">
         </div>
         <ul class="thumbnails">
-          <li><img src="${infoModal.infoModal0.image}" alt=""></li>
-          <li><img src="${infoModal.infoModal0.image}" alt=""></li>
-          <li><img src="${infoModal.infoModal0.image}" alt=""></li>
-          <li><img src="${infoModal.infoModal0.image}" alt=""></li>
+          <li><img src="${infoModal[0].image}" alt=""></li>
+          <li><img src="${infoModal[0].image}" alt=""></li>
+          <li><img src="${infoModal[0].image}" alt=""></li>
+          <li><img src="${infoModal[0].image}" alt=""></li>
         </ul>
-        <p class="intro">${infoModal.infoModal0.description}</p>
+        <p class="intro">${infoModal[0].description}</p>
          <div class="modal-buttons">
-           <button href="${infoModal.infoModal0.liveUrl}" type="button">See live<img src="assets/img/ic_link.svg" alt=""></button>
-           <button href="${infoModal.infoModal0.seeUrl}" type="button">See code<img src="assets/img/ic_github_black.svg" alt=""></button>
+           <button href="${infoModal[0].liveUrl}" type="button">See live<img src="assets/img/ic_link.svg" alt=""></button>
+           <button href="${infoModal[0].seeUrl}" type="button">See code<img src="assets/img/ic_github_black.svg" alt=""></button>
          </div>
          <div class="modal-links">
            <a href="#"><img src="assets/img/ic_arrow_left.svg" alt=""> Previous project</a>
