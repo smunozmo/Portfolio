@@ -121,3 +121,45 @@ closeMenu.addEventListener('click', menuClose);
 openModal.forEach((button) => {
   button.addEventListener('click', modalOpen);
 });
+
+// Form Validation
+const mail = document.getElementById('mail');
+const submitBtn = document.getElementById('submitBtn');
+
+submitBtn.addEventListener('click', () => {
+  if (mail.value.toLowerCase() !== mail.value) {
+    submitBtn.setCustomValidity('Oops! Email should be lowercase only please.');
+  } else {
+    submitBtn.setCustomValidity('');
+  }
+});
+
+//  Local Storage
+const input = document.getElementById('name');
+const email = document.getElementById('mail');
+const msg = document.getElementById('msg');
+const form = document.getElementById('form');
+
+function updateValue() {
+  const formObject = {
+    name: input.value,
+    email: email.value,
+    msg: msg.value,
+  };
+
+  localStorage.setItem('formObject', JSON.stringify(formObject));
+}
+
+form.addEventListener('input', updateValue);
+
+const thisObject = JSON.parse(localStorage.getItem('formObject'));
+
+if (localStorage.getItem('theObject.name') !== '') {
+  input.value = thisObject.name;
+}
+if (localStorage.getItem('theObject.email') !== '') {
+  email.value = thisObject.email;
+}
+if (localStorage.getItem('theObject.msg') !== '') {
+  msg.value = thisObject.msg;
+}
