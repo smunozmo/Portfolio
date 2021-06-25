@@ -14,7 +14,7 @@ function updateValue() {
   localStorage.setItem('formObject', JSON.stringify(formObject));
 }
 
-form.addEventListener('input', updateValue);
+form.addEventListener('input', updateValue());
 
 const thisObject = JSON.parse(localStorage.getItem('formObject'));
 
